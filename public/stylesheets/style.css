@@ -1,0 +1,93 @@
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar-right {
+  margin-right: 10px;
+}
+
+.poster img {
+  width: 90%;
+  text-align: center;
+  margin: 10px 5% 10px;
+}
+
+#search-form input {
+  margin: 8px 0px;
+  padding: 5px;
+}
+
+.form-group select {
+  min-width: 150px;
+}
+
+.single-movie-title, .overview-header {
+  font-family: 'Metamorphous', cursive;
+}
+
+.overview-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.single-movie-overview {
+  font-family: 'Swanky and Moo Moo', cursive;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.now-playing-movies .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.now-playing-movies li {
+  margin: 10px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.now-playing-movies li a {
+  text-decoration: none;
+  color: black;
+}
+
+.now-playing-movies img {
+  float: left;
+  margin-right: 10px;
+  width: 64px;
+  transition: 0.3s;
+}
+
+.now-playing-movies img:hover {
+  width: 200px;
+}
+
+.page-title {
+  border-bottom: solid 1px #333;
+  text-align: center;
+  margin-bottom: 2px;
+  color: navy;
+}
+
+.title {
+  background-color: rgb(25, 36, 53);
+  border: solid 1px #333;
+  text-align: center;
+  margin-bottom: 1px;
+  color: white;
+  font-size: 20px !important;
+}
+
+.clearfix:after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0; 
+  clear: both;
+}

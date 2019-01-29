@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;    
+}
+
+.title {
+    height: 60px;
+    background-color: #444; 
+    color: white;
+    font-size: 3rem !important;
+    line-height: 60px
+}
+
+.title span {
+    font-size: 1.5rem;
+}
+
+section .poster {
+    float: left;
+    width: 400px;    
+}
+
+section .description {
+    margin-top: 20px;
+}
+
+.movie-info {
+    margin-top: 20px;
+}
+
+.overview {
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+
+.movie-info ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-info ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+
+.movie-info ul li span {
+    font-weight: bold;
+}

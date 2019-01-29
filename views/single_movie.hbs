@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{{title}}</title>
+	{{> head}}
+	<link rel="stylesheet" href="/stylesheets/single_movie_style.css">
+</head>
+
+<body>
+	{{> navbar2}}
+
+	<div class="container">
+		<div class="row">
+			<header class="title">{{movie.original_title}} <span>[{{#each movie.genres}} {{this.name}},&nbsp; {{/each}}]</span></header>
+
+			<section>
+				<div class="poster clearfix"><img src="http://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="moie poster"></div>
+				<div class="description">
+					<header class="movie-info">
+						<ul>
+							<li>Produkcja: <span>{{movie.production_countries.name}}</span></li>
+							<li>Data premiery: <span>{{movie.release_date}}</span></li>
+							<li>Czas trwania: <span>{{movie.runtime}}[min]</span></li>
+							<li><a href="{{movie.homepage}}">{{movie.homepage}}</a></li>
+							<li>Ocena: <span>{{movie.vote_average}}</span></li>
+							<li>Budżet: <span>{{movie.budget}}$</span></li>
+						</ul>
+					</header>
+					<section class="overview">
+						<h3>Opis filmy</h3>
+						<p>{{movie.overview}}</p>
+					</section>
+				</div>
+			</section>			
+		</div>
+	</div>
+
+	<!-- Button trigger modal -->
+	<div class="col-sm-12 text-center">
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			More Details
+		</button>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Movie Information</h4>
+				</div>
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
